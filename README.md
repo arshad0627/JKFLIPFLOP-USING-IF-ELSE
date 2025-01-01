@@ -54,7 +54,8 @@ RegisterNumber:24005938
 
 */
 ```
-module jk_ff (j, k, clk, rst, q);
+JK FLIPFLOP USING IF ELSE STATEMENT
+ module jk_ff (j, k, clk, rst, q);
   input j, k, clk, rst;
   output reg q;
   always @(posedge clk or posedge rst) begin
@@ -67,9 +68,8 @@ module jk_ff (j, k, clk, rst, q);
     else if (j == 1 && k == 0)
       q <= 1; // Set
     else if (j == 1 && k == 1)
-      q <= ~q; // Toggle
-  end
-endmodule
+      q <= ~q; // Toggle
+  end
 ```
 
 **RTL**
